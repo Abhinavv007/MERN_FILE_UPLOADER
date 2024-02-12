@@ -14,7 +14,7 @@ function App() {
   const[profile,setProfile] = useState()
   useEffect(()=>{
     const getAllUsers = async()=>{
-      const allUsers = await axios.get("http://localhost:9000/api/get/user")
+      const allUsers = await axios.get("https://backend-e8wi.onrender.com/api/get/user")
         setUsers(allUsers.data)
     }
     getAllUsers()
